@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo</title>
+  <title>Demo - lottie Animation</title>
   <script type="text/javascript"
-    src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js?ver=1.0.0"
-    id="interactivity-script-js"></script>
-  <script type="text/javascript"
-    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?ver=1.0.0"
-    id="lottie-player-js"></script>
+    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?ver=1.0.0"></script>
   <style>
     body {
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 5rem 0;
     }
 
     body>* {
+      margin: 2rem 0;
       max-width: 80vh;
-      min-height: 80vh;
 
     }
   </style>
@@ -28,16 +28,18 @@
 
 <body>
   <div>
+    <lottie-player id="building-lottie" src="./building2/data.json" loop="" autoplay="" speed="1"
+      background="transparent"></lottie-player>
+  </div>
+  <div>
     <lottie-player id="building-lottie" src="./building/data.json" loop="" autoplay="" speed="1"
       background="transparent"></lottie-player>
   </div>
   <div>
-    <lottie-player id="building-lottie" src="./building2/data.json" loop="" autoplay="" speed="1"
+    <lottie-player id="building-lottie" src="./building3/data.json" loop="" autoplay="" speed="1"
       background="transparent"></lottie-player>
   </div>
-  <script>
-    // window.location.href = "https://mmuhib.com";
-  </script>
+
 </body>
 
 </html>
